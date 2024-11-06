@@ -1,5 +1,7 @@
 package cl.ufro.dci.Model;
 
+import java.util.ArrayList;
+
 public class Estudiante {
 
 	private String nombre;
@@ -7,9 +9,23 @@ public class Estudiante {
 	private String rut;
 	private String direccion;
 	private String contacto;
-	private java.util.ArrayList<Curso> cursosInscritos;
+	private ArrayList<Curso> cursosInscritos;
 
-	public java.util.ArrayList<Curso> getCursosInscritos() {
+	/**
+	 *
+	 * @param nombre
+	 * @param apellido
+	 * @param rut
+	 */
+
+	public Estudiante(String nombre, String apellido, String rut) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.rut = rut;
+		this.cursosInscritos = new ArrayList<Curso>();
+	}
+
+	public ArrayList<Curso> getCursosInscritos() {
 		return this.cursosInscritos;
 	}
 
@@ -18,8 +34,7 @@ public class Estudiante {
 	 * @param curso
 	 */
 	public void inscribirCurso(Curso curso) {
-		// TODO - implement Estudiante.inscribirCurso
-		throw new UnsupportedOperationException();
+		this.cursosInscritos.add(curso);
 	}
 
 	/**
@@ -27,19 +42,6 @@ public class Estudiante {
 	 * @param curso
 	 */
 	public void desinscribirCurso(Curso curso) {
-		// TODO - implement Estudiante.desinscribirCurso
-		throw new UnsupportedOperationException();
+		this.cursosInscritos.remove(curso);
 	}
-
-	/**
-	 * 
-	 * @param nombre
-	 * @param apellido
-	 * @param rut
-	 */
-	public Estudiante(String nombre, String apellido, String rut) {
-		// TODO - implement Estudiante.Estudiante
-		throw new UnsupportedOperationException();
-	}
-
 }
