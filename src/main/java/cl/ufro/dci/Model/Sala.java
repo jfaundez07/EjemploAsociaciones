@@ -6,16 +6,27 @@ public class Sala {
 	private String edificio;
 	private String pabellon;
 
-	public String getNombre() {
-		return this.nombre;
+	/**
+	 *
+	 * @param nombre
+	 * @param edificio
+	 * @param pabellon
+	 */
+	public Sala(String nombre, String edificio, String pabellon) {
+		// TODO - implement Sala.Sala
+		throw new UnsupportedOperationException();
 	}
 
 	/**
-	 * 
+	 *
 	 * @param nombre
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	public String getNombre() {
+		return this.nombre;
 	}
 
 	public String getEdificio() {
@@ -24,17 +35,6 @@ public class Sala {
 
 	public String getPabellon() {
 		return this.pabellon;
-	}
-
-	/**
-	 * 
-	 * @param nombre
-	 * @param edificio
-	 * @param pabellon
-	 */
-	public Sala(String nombre, String edificio, String pabellon) {
-		// TODO - implement Sala.Sala
-		throw new UnsupportedOperationException();
 	}
 
 }

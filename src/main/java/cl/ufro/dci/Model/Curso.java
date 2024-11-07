@@ -25,16 +25,24 @@ public class Curso {
 		this.estudiantesInscritos = new ArrayList<Estudiante>();
 	}
 
+	/**
+	 *
+	 * @param nombre
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
 	public String getNombre() {
 		return this.nombre;
 	}
 
 	/**
-	 * 
-	 * @param nombre
+	 *
+	 * @param horasSemanales
 	 */
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setHorasSemanales(int horasSemanales) {
+		this.horasSemanales = horasSemanales;
 	}
 
 	public int getHorasSemanales() {
@@ -42,11 +50,11 @@ public class Curso {
 	}
 
 	/**
-	 * 
-	 * @param horasSemanales
+	 *
+	 * @param sala
 	 */
-	public void setHorasSemanales(int horasSemanales) {
-		this.horasSemanales = horasSemanales;
+	public void setSala(Sala sala) {
+		this.sala = sala;
 	}
 
 	public Sala getSala() {
@@ -54,23 +62,15 @@ public class Curso {
 	}
 
 	/**
-	 * 
-	 * @param sala
-	 */
-	public void setSala(Sala sala) {
-		this.sala = sala;
-	}
-
-	public Profesor getProfesorAsignado() {
-		return this.profesorAsignado;
-	}
-
-	/**
-	 * 
+	 *
 	 * @param profesorAsignado
 	 */
 	public void setProfesorAsignado(Profesor profesorAsignado) {
 		this.profesorAsignado = profesorAsignado;
+	}
+
+	public Profesor getProfesorAsignado() {
+		return this.profesorAsignado;
 	}
 
 	public ArrayList<Estudiante> getEstudiantesInscritos() {
