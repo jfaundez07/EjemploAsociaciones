@@ -8,7 +8,15 @@ Modele un sistema que gestione los cursos (ramos) en un colegio.
 Es importante conocer que un curso debe tener asignado un profesor, y tiene una cantidad de estudiantes inscritos.  
 Ademas, es relevante que le asigne a cada curso, una sala.
 
-Considere que tanto el profesor como el estudiante tienen caracteristicas relvantes para el colegio, tales como sus direcciones, algun contacto, entre otros que usted considere pertinentes.
+Considere que tanto el profesor como el estudiante tienen caracteristicas relvantes para el colegio, tales como: <br>
+- Nombre
+- Apellido
+- Rut
+- Direccion
+- Contacto
+- Email 
+
+Entre otros que usted considere pertinente que definen a una _persona_.
 
 ## Diagrama de Clases:
 
